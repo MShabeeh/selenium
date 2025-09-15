@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 import time
 browser = webdriver.Firefox()
 
@@ -11,4 +12,5 @@ try:
     assert 'Selenium12' in title
 except Exception as e:
     print(e)
+browser.find_element(By.U)
 browser.quit()
