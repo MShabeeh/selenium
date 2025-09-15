@@ -10,3 +10,5 @@ variable = driver.find_element(By.ID,value='dropdown')
 select = Select(variable)
 select.select_by_index(1)
 select.select_by_value('2')
+select.select_by_visible_text('Option 1')
+
