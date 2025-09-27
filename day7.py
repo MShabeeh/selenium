@@ -11,4 +11,8 @@ select = Select(variable)
 select.select_by_index(1)
 select.select_by_value('2')
 select.select_by_visible_text('Option 1')
-
+cnt = 0
+for option in select.options:
+    cnt+=1
+print(cnt)
+    
